@@ -10,6 +10,6 @@ export default {
   },
   getBreed: function(breed) {
     const query = BASEURL + `breed/${breed}/images`
-    return axios.get(BASEURL + query);
+    return axios.get(query);
   }
 };
