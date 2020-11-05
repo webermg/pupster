@@ -10,7 +10,7 @@ export default class Discover extends Component {
   }
 
   getNewDog = () => {
-    Api.search().then(data => {
+    Api.getRandom().then(data => {
       this.setState({
         current: data.data.message
       })
