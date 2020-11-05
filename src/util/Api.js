@@ -11,5 +11,9 @@ export default {
   getBreed: function(breed) {
     const query = BASEURL + `breed/${breed}/images`
     return axios.get(query);
+  },
+  getBreeds: function(breed) {
+    const query = BASEURL + `breeds/list/all`
+    return axios.get(query);
   }
 };
